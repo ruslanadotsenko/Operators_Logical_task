@@ -1,5 +1,6 @@
 package app;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
@@ -16,6 +17,7 @@ static double tax;
     }
     private static void getRevenue(){
         Scanner sc = new Scanner(System.in);
+        sc.useLocale(Locale.ENGLISH);
         System.out.print("Enter your revenue in UAH: ");
         revenue = sc.nextDouble();
         sc.close();
